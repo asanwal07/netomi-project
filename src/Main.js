@@ -9,7 +9,7 @@ const Main = () => {
       const [contact, setContact] = useState('');
       const [email, setEmail] = useState('');
       const [date, setDate] = useState('');
-      const [desh, setDesh] = useState('');
+      // const [desh, setDesh] = useState('');
       const [deshList, setDeshList] = useState('');
       const [cityList, setCityList] = useState('');
       const [successmessage, setSuccessmessage] = useState(false);
@@ -33,7 +33,7 @@ const Main = () => {
 
       const handleChangeInCountry = (event) => {
             if (event && event.target && event.target.value) {
-                  setDesh(event.target.value);
+                  // setDesh(event.target.value);
                   const getres = deshList.data.find(desh => desh.iso3 === event.target.value);
                   setCityList(getres.cities);
             }
